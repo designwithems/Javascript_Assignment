@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="card">
+    <div class="container">
+        <div class="heading">
+            <h1> Return the Total<br> Number of Elements<br> in an Array</h1>
+            <div class="note">
+                <main>
+                    <span> First Element: <input id="fE" value="PHP"></span><br><br>
+                    <span> Second Element: <input id="sE" value="Javascript"></span><br><br>
+                    <span> Third Element: <input id="tE" value="MySQL"></span><br><br>
+                    <span id="total" ></span> <br> <br>
+                    <span id="print" ></span> <br> <br>
+                    <button onclick="result()">Submit</button>
+                </main>
+
+                <div>
+                    <nav><a href="../index.html" id="main">Back to Main Page</a></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function result(){
+        var sum = 0;
+            pull = 0;
+            a = (document.getElementById('fE').value);
+            b = (document.getElementById('sE').value);
+            c = (document.getElementById('tE').value);
+
+        //combined the elements to one array
+        sum =[a,b,c];
+        document.getElementById('total').innerHTML= "These are your elements: <br>"+ sum[0]+" "+sum[1]+ " "+ sum[2];
+
+        // then we print the length
+        pull = sum.length;
+        document.getElementById('print').innerHTML= "Total Length: " + pull;
+    }  
+</script>
+</body>
+</html>

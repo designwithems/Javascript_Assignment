@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+div{
+    display: block;
+    padding: 18px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.container{
+    max-width: 600px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.heading{
+    font-size: 1rem;
+    color: beige;
+    margin: 0;
+}
+.name{
+    font-size: 1em;
+    color: aqua;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    border: hidden;
+    border-spacing: 18px;
+    max-height: max-content;
+}
+
+td{
+    background-color: hsl(193, 38%, 86%);
+    text-align: center;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 1rem;
+    border: 1px solid;
+    border-radius: 18px;
+    padding: 15px 10px 15px 10px;
+}
+
+a#in {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+
+.note{
+    font-size: 1rem;
+    color: hsl(193, 38%, 86%);
+    text-align: left;
+}
+
+#main{
+    font-size: .75rem;
+    color: aqua;
+    text-decoration: underline hsl(193, 38%, 86%) ;
+}
+
+tr:hover{
+    background-color: hwb(60 96% 0%);
+}
+td:hover{
+    background-color: hsl(194, 32%, 56%);
+    padding: 20px 15px 20px 15px;
+    transition: .30s;
+
+}

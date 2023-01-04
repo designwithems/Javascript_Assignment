@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="card">
+    <div class="container">
+        <div class="heading">
+            <h1> Return the total integer <br> values  all elements <br> in an Array</h1>
+            <div class="note">
+                <main>
+                    <span> 1: <input id="1"></span> <br> <br>
+                    <span> 2: <input id="2"></span> <br> <br>
+                    <span> 3: <input id="3"></span> <br> <br>
+                    <span> 4: <input id="4"></span> <br> <br>
+                    <span> 5: <input id="5"></span> <br> <br>
+                    <span id="total" > Total: </span> <br> <br>
+                    <button onclick="add()">Submit</button>
+                </main>
+
+                <div>
+                    <nav><a href="../index.html" id="main">Back to Main Page</a></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function add(){
+        var sum = 0;
+            a = parseInt(document.getElementById('1').value);
+            b = parseInt(document.getElementById('2').value);
+            c = parseInt(document.getElementById('3').value);
+            d = parseInt(document.getElementById('4').value);
+            e = parseInt(document.getElementById('5').value);
+
+            //combined all the inputs to one array
+            ourArray = [a,b,c,d,e];
+
+            //iterate
+            for (let i = 0; i < ourArray.length; i += 1) {
+            sum += ourArray[i];}
+            
+            //print
+            if (isNaN(a && b && c && d&&e)){
+            alert("Please input number")
+        } else {
+            document.getElementById('total').innerHTML= "Total: "+ sum;
+    }
+    }
+</script>
+</body>
+</html>

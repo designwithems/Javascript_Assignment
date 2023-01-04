@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="card">
+    <div class="container">
+        <div class="heading">
+            <h1> Return the First Element <br>in an Array</h1>
+            <div class="note">
+                <main>
+                    <span> First Element: <input id="fE" value="PHP"></span><br><br>
+                    <span> Second Element: <input id="sE" value="Javascript"></span><br><br>
+                    <span> Third Element: <input id="tE" value="MySQL"></span><br><br>
+                    <span id="total" ></span> <br> <br>
+                    <span id="pulled" ></span> <br> <br>
+                    <span id="print" ></span> <br> <br>
+                    <button onclick="combine()">Submit</button>
+                </main>
+
+                <div>
+                    <nav><a href="../index.html" id="main">Back to Main Page</a></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+   function combine(){
+        var sum = 0;
+            pull = 0;
+            a = (document.getElementById('fE').value);
+            b = (document.getElementById('sE').value);
+            c = (document.getElementById('tE').value);
+
+        //combined the elements to one array
+        sum =[a,b,c];
+        document.getElementById('total').innerHTML= "These are your elements: <br>"+ sum[0]+" "+sum[1]+ " "+ sum[2];
+
+        // then pulled the first element and transfered the value to pull
+
+        pull = sum.shift();
+        document.getElementById('pulled').innerHTML= "Sorry, but we'll snatch the first<br> element '" + pull + "' for no reason";
+
+        document.getElementById('print').innerHTML= "Here's the rest of your elements: <br>" + sum;
+    }  
+</script>
+</body>
+</html>

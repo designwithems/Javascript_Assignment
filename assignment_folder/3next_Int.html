@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="card">
+    <div class="container">
+        <div class="heading">
+            <h1> Return the Next <br> Number from the <br> Integer </h1>
+            <div class="note">
+                <main>
+                    <span> Input any number<br></span> <br>
+                    <input id="num"><br> <br>
+                    <span id="total" > Result: </span> <br> <br>
+                    <button onclick="convert()"> Submit</button>
+                </main>
+
+                <div>
+                    <nav><a href="../index.html" id="main">Back to Main Page</a></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function convert(){
+        var results = 0;
+        let num = parseInt(document.getElementById('num').value);
+        results = parseInt(num += 1);
+        if (isNaN(num)){
+            alert("Please input number")
+        } else {
+        document.getElementById('total').innerHTML= "Results: "+ results;
+    }
+}
+</script>
+</body>
+</html>

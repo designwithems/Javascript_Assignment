@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="card">
+    <div class="container">
+        <div class="heading">
+            <h1> Adding Values</h1>
+            <div class="note">
+                <main>
+                    <span> x: <input id="x"></span> <br> <br>
+                    <span> y: <input id="y"></span> <br> <br>
+                    <span id="total" > Total: </span> <br> <br>
+                    <button onclick="add()">Submit</button>
+                </main>
+
+                <div>
+                    <nav><a href="../index.html" id="main">Back to Main Page</a></nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        
+       
+
+    <script>
+    
+    function add(a,b){
+        var sum = 0;
+        var a = parseInt(document.getElementById('x').value);
+        var b = parseInt(document.getElementById('y').value);
+        sum = parseInt(a + b);
+        if (isNaN(a,b)){
+            alert("Please input number")
+        } else {
+            document.getElementById('total').innerHTML= "Total: "+ sum;
+    }
+    }
+    
+    </script>
+    
+</body>
+</html>
