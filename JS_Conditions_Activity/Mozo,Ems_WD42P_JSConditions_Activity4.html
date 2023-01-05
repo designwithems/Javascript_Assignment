@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the remark of students based on their grades</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Please input your grade"));
+            
+        if (a < 40 ){
+            alert("Student has failed");
+        } else if ( a > 41 && a < 50 ){
+            alert("E Grade");
+        } else if ( a > 51 && a < 60 ){
+            alert("D Grade");
+        } else if ( a > 61 && a < 70 ){
+            alert("C Grade");
+        } else if ( a > 71 && a < 80 ){
+            alert("B Grade");
+        } else if ( a > 81 && a < 90 ){
+            alert("A Grade");
+        } else if ( a > 91 && a < 100 ){
+            alert("S Grade");
+        } else {
+            alert("invalid remarks");
+        }
+
+        
+    </script>
+</body>
+</html>

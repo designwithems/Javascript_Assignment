@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Get number of days in
+			a specified month
+		</title>	
+	</head>
+	
+	<body style = "text-align:center;">
+		
+		<button onclick = "GFG_Fun()">
+			click here
+		</button>
+
+		<script>
+			
+			var year = parseInt(prompt("Please input year"));
+            var month = parseInt(prompt("Please input number of month" , "February: 2"));
+            
+			alert ("Click on button to get the"
+				+ " number of days in specified month");
+				
+			
+            function leapYear(year){
+            return (year & 3) == 0 && ((year % 25) != 0 || (year & 15) == 0);
+            }
+			function daysInMonth () {
+				if(leapYear(year) == true){
+                    return new Date(year, month, 0).getDate(); 
+                } else {
+                    return new Date(year, month, 0).getDate();
+                } 
+			}
+			
+			function GFG_Fun() {
+				var date = new Date();
+		
+				alert("The " + month + "nd of the year " + year +" has "
+				+ daysInMonth(month, year) + " days!");
+			}
+
+		</script>
+	</body>
+</html>					
+
