@@ -18,3 +18,5 @@ See the https://github.com/designwithems/Javascript_Assignment.github.io/tree/ma
 
 ✅ I managed to use arithmetic, conditional, comparison, and logical operators.
 See the https://github.com/designwithems/Javascript_Assignment.github.io/tree/main/JS_Conditions_Activity  
+
+🎉I hope as a newbie I'll keep you interested even in the future, please come visit again🎉
