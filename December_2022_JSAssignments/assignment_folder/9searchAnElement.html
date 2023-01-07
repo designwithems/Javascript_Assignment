@@ -40,12 +40,16 @@ function search (){
     a = (document.getElementById('fE').value);
 
     let X = items.includes(a);
+
     if(!(X)){
         alert('Sorry not on the list')
         document.getElementById('print').innerHTML= X
     } else{
         document.getElementById('print').innerHTML= X
     }
+
+    // OR simpler return document.getElementById('print').innerHTML= Boolean(X)
+
 }
 
     

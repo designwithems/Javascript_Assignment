@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         background-color: antiquewhite;
+         text-decoration: solid;
+         font-size: medium;
+        } 
+     </style>
+</head>
+<body>
+<h1> Write a JS code to print a pattern using for loop </h1>
+<p> Please check the console</p>
+<p>1 <br> 1 2 <br> 1 2 3 <br> 1 2 3 4 <br> 1 2 3 4 5 </p>
+
+<script>
+
+function pattern(){
+    var one = "";
+        oneTwo = "";
+
+        for(i = 1; i < 6; i ++){
+            one = one + i + " ";
+            oneTwo = oneTwo + one + '\n';
+        } console.log(oneTwo);
+}
+
+pattern()
+</script>
+
+
+
+</body>
+</html>

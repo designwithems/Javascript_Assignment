@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         background-color: antiquewhite;
+         text-decoration: solid;
+         font-size: medium;
+        } 
+     </style>
+</head>
+<body>
+<h1> Convert Hours into Seconds</h1>
+<p id="results"></p>
+
+<script>
+
+var z= parseInt(prompt("Input hour: ", " 5"))
+
+function minSec (){
+    m = z*60
+    s = m*60
+    alert("You had " + m + " in a minute and " + s + " in a seconds")
+    document.getElementById('results').innerHTML = "You had " + m + " in a minute and " + s + " in a seconds"
+}
+
+minSec()
+
+
+</script>
+</body>
+</html>
