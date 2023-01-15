@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(74, 82, 197)), url(img.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 680px;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 200px;
+}
+
+.container{
+    padding: 130px 100px 130px 100px;
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    bottom: 55%;
+    transform: translate(-50%,-50%);  
+    min-height: 100vh; 
+}
+
+.card{
+    padding: 60px 40px 60px 40px;
+    max-width: 680px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-holder{
+    background-color: white;
+    font-size: 1rem;
+}
+
+label{
+    font-size: 1rem;
+}
+td{
+    padding-bottom: 10px;
+}
+.section{
+    padding-left: 10px;
+    font-size: 1rem;
+}
+.section-1{
+    color: #eb8d41;
+}
+
+.section-2{
+    color: rgb(115, 99, 255);
+    
+}
+
+.section-3{
+    color: rgb(131, 131, 131);
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+}
+h2{
+    text-align: left;
+    padding: 0 5px 0 5px;
+    margin: 0;
+}
+
+.col-2{
+    padding: 0 5px 0 5px;
+}
+
+.col-in{
+    width: 100%;
+}
+
+.border {
+    border-bottom: rgb(18, 1, 255) solid 3px;
+    opacity: .25;
+    width: inherit;
+ }
+
+ em{
+    font-size: .8em;
+ }
+
+ .btn--blue{
+    background: #4272d7;
+}
+.btn--radius-2{
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+}
+
+.btn{
+    background: #B9DFFF;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+    padding: 15px 30px;
+    display: block;
+}
+
+.btn:hover{
+    background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+    cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+    border: 1px solid rgb(71, 187, 255);
+    background: #d3e1ff;
+}
+
+input:hover{
+    background: hsl(206, 100%, 89%);
+    color: rgb(0, 0, 0);
+	border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+}
