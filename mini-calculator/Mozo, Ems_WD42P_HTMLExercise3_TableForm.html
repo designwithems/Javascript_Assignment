@@ -5,7 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Sans-serif';
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator{
+    padding: 20px;
+    background: #FA8072;
+    border-radius: 5px;
+    max-width: 300px;
+}
+div{
+    max-width: inherit;
+    overflow: hidden;
+}
+tr td input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #ff8989;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 10 px;
+    color: #F5F5F5;
+}
+
+tr td input:hover{
+    background:#fc6767;
+}
+
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+form .display input{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    text-align: right;
+    flex: 1;
+    font-size: 50px;
+    outline: none;
+    color: #F5F5F5;
+    margin-top: 10px;
+}
+
+.operator{
+    background: #ff8989;
+}
+
+tr td input .equal{
+    width: 100%;
+}
+
+.small{
+    color: black;
+}
+
+.small link{
+    text-align: none;
+}
+    </style>
 </head>
 <body>
     <div class="container">
