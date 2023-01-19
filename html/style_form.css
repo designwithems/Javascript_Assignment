@@ -1,0 +1,51 @@
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgba(178, 190, 181, 0.5);
+}
+
+.banner{
+    position: relative;
+    padding: 0;
+}
+
+.mini{
+    position: absolute;
+    height: 50px; 
+}
+
+input{
+    width: 100%;
+    cursor: pointer;
+}
+
+.payNow{
+    padding: 5px;
+    width: 210px;
+    height: 35px;
+    background: #f53d2d;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 50px;
+    font: 1.5em white bold;
+    color: #ffffff;
+}
+
+.payNow:hover {
+    cursor: pointer;
+    width: 210px;
+    background-color: #f56659;
+}
+
+.card .card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/html/images/books.png">
+
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <div class="logo-name">
+                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Table.html" style="color: white;"> Shoppee Books <img src="/html/images/icon.png" alt="business logo/ icon" srcset=""> </a>
+                    </div>
+            </li>
+            <li class="search">
+                <div class="search-div">
+                <input type="search" name="search" id="search" placeholder="Search: Books, Authors Name, and Year Published" onkeyup="myFunction()">
+                <button class="btn"><a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/search.png" alt="search icon" onclick="myFunction()"></a>
+                </button>
+                </div>
+            </li>
+            <li>
+                <button>
+                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/cart.png" alt="shopping cart"></a>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="sr">
+            <p class="search_results" id="search_results"></p>
+        </div>
+        <div class="main">
+            <main>
+                <table id="myTable">
+                    <thead>
+                        <th style="width: 40%;"> Titles</th>
+                        <th> Authors</th>
+                        <th> Year Published</th>
+                        <th style="width: 20%;"> <img src="/html/images/10-off.png" alt="Book discount in all items"></th>
+                    </thead>
+                    <tbody>
+                        <tr class="list-books" id="myLists">
+                            <td id="lists">
+                                <img src="/html/images/atomic habits.PNG" alt="">
+                                <a href="">Atomic Habits (Tiny Changes, Remarkable Results)</a> 
+                            </td>
+                            <td id="lists">
+                                <a href="">James Clear</a> 
+                            </td>
+                            <td id="lists">
+                                <a href=""> October 2018</a> 
+                            </td>
+                            <td class="action">
+                                <button>
+                                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/cart-black.png" alt="" id="add_to_cart" ></a>
+                                </button>
+                                <button>
+                                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/wishlist.png" alt="" id="wishlist"></a>
+                                </button>
+
+                            </td>
+                        </tr>
+                        <tr class="list-books" id="myLists">
+                            <td id="lists" style="align-items: center;"> 
+                                <img src="/html/images/ikigai.PNG" alt="">
+                                <a href="" style="text-align: center;"> Ikigai: The Japanese Secret to a Long and Happy Life</a> </td>
+                            <td id="lists"> 
+                                <a href=""> Francesc Miralles and Hector Garcia </a>
+                            </td>
+                            <td id="lists"> <a href=""> April 2016</a> 
+                            </td>
+                            <td class="action">
+                                <button>
+                                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/cart-black.png" alt="" id="add_to_cart" ></a>
+                                </button>
+                                <button>
+                                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/wishlist.png" alt="" id="wishlist"></a>
+                                </button>
+
+                            </td>
+                        </tr>
+                        <tr class="list-books" id="myLists">
+                            <td id="lists"> 
+                                <img src="/html/images/the mountain is you.PNG" alt="">
+                                <a href=""> The Mountain Is You</a>  
+                            </td>
+                            <td id="lists"> 
+                                <a href=""> Brianna Wiest </a>
+                            </td>
+                            <td id="lists"> 
+                                <a href=" ">2020</a>
+                            </td>
+                            <td class="action">
+                                <button>
+                                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/cart-black.png" alt="" id="add_to_cart" ></a>
+                                </button>
+                                <button>
+                                    <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"><img src="/html/images/wishlist.png" alt="" id="wishlist"></a>
+                                </button>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </main>
+            <div class="btn-buy-now">
+                <button id="buy_now" class="buy_now"> <a href="/html/Mozo,Ems_WD42P_Exercise2_Form.html"> Click to Buy!</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+        
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("search");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+                if(true){
+                document.getElementById('search_results').innerHTML = "Search Results:"}
+              } else {
+                tr[i].style.display = "none";
+                if(NaN && false && none){
+                document.getElementById('search_results').innerHTML = " No Results found"}
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>
