@@ -14,7 +14,7 @@ As of now, it's all about basic Javascript activities and assignments.
 Wherein:
 
 ✅ I got to try making mini-website of my computations. 
-See the https://github.com/designwithems/Javascript_Assignment.github.io/tree/main/December_2022_JSAssignments
+See the https://js-basic-function-byems.netlify.app/
 
 ✅ I managed to use arithmetic, conditional, comparison, and logical operators.
 See the https://github.com/designwithems/Javascript_Assignment.github.io/tree/main/JS_Conditions_Activity  
